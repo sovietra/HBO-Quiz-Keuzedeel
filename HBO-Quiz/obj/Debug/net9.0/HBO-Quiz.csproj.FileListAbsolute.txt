@@ -1,0 +1,14 @@
+C:\Users\gotch\HBO-Quiz\bin\Debug\net9.0\HBO-Quiz.exe
+C:\Users\gotch\HBO-Quiz\bin\Debug\net9.0\HBO-Quiz.deps.json
+C:\Users\gotch\HBO-Quiz\bin\Debug\net9.0\HBO-Quiz.runtimeconfig.json
+C:\Users\gotch\HBO-Quiz\bin\Debug\net9.0\HBO-Quiz.dll
+C:\Users\gotch\HBO-Quiz\bin\Debug\net9.0\HBO-Quiz.pdb
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\HBO-Quiz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\HBO-Quiz.AssemblyInfoInputs.cache
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\HBO-Quiz.AssemblyInfo.cs
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\HBO-Quiz.csproj.CoreCompileInputs.cache
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\HBO-Quiz.dll
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\refint\HBO-Quiz.dll
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\HBO-Quiz.pdb
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\HBO-Quiz.genruntimeconfig.cache
+C:\Users\gotch\HBO-Quiz\obj\Debug\net9.0\ref\HBO-Quiz.dll
