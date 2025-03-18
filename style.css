@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+}
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+    perspective: 10px;
+    
+}
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+   
+   
+   
+}
+.background, .foreground{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+
+}
+.background{
+    transform: translateZ(-40px) scale(6);
+}
+.foreground{
+    transform: translateZ(-10px) scale(2);
+    
+}
+
+
+:root {
+    --main-color: #eca34f;
+}
+h1{
+    position: absolute;
+    top: 22%;
+    font-size: 6rem;
+   letter-spacing: 6px;
+   color: rgb(29, 29, 29);
+   text-shadow: 2px 2px 1px rgb(10, 10, 10);
+   transform: scale(1.5);
+}
+
+h3{
+    position: absolute;
+    top: 42%;
+    font-size: 1rem;
+   letter-spacing: 6px;
+   color: rgb(0, 0, 0);
+   text-shadow: 2px 2px 1px rgb(49, 49, 49);
+   transform: scale(1.5);
+}
+
+
+
+section{
+    background-color:rgb(45, 45, 45);
+    padding: 5rem 0;
+    color: rgb(247, 242, 242);
+    
+}
+.adven{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+p{
+    font-size: 2rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg1{
+    background-image: url(images/spirited-away-1.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.desc{
+    position: relative;
+    top: 10rem;
+    left: 30rem;
+    background-color:  rgb(128, 117, 117);
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+.bg2{
+    background-image: url(images/spirited-away-2.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.bg3{
+    background-image: url(images/spirited-away-3.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg4{
+    background-image: url(images/spirited-away-4.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg5{
+    background-image: url(images/spirited-away-5.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.bg6{
+    background-image: url(images/spirited-away-6.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    left: 45%;
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    font-weight: 200;
+    border: .1rem solid transparent;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: #eca34f;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
