@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+}
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+    perspective: 10px;
+    
+}
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+   
+   
+   
+}
+.background, .foreground{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+
+}
+.background{
+    transform: translateZ(-40px) scale(6);
+}
+.foreground{
+    transform: translateZ(-10px) scale(2);
+}
+h1{
+    position: absolute;
+    top: 22%;
+    font-size: 6rem;
+   letter-spacing: 6px;
+   color: rgb(197, 189, 178);
+   text-shadow: 2px 2px 1px rgb(138, 126, 126);
+   transform: scale(1.5);
+}
+
+h3{
+    position: absolute;
+    top: 42%;
+    font-size: 1rem;
+   letter-spacing: 6px;
+   color: rgb(0, 0, 0);
+   text-shadow: 2px 2px 1px rgb(49, 49, 49);
+   transform: scale(1.5);
+}
+
+
+
+section{
+    background-color:rgb(45, 45, 45);
+    padding: 5rem 0;
+    color: rgb(247, 242, 242);
+    
+}
+.adven{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+p{
+    font-size: 2rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg1{
+    background-image: url(spirited-away-1.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.desc{
+    position: relative;
+    top: 10rem;
+    left: 30rem;
+    background-color:  rgb(128, 117, 117);
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+.bg2{
+    background-image: url(spirited-away-2.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.bg3{
+    background-image: url(spirited-away-3.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
