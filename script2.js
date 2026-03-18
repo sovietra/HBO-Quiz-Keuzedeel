@@ -1,50 +1,49 @@
 const questions = [
     {
-        section: "Sectie 1: Software Engineering",
-        question: "Wat is het hoofddoel van de Agile-methodologie in softwareontwikkeling?",
+        section: "Sectie 2: Beveiliging",
+        question: "Waar staat de CIA Triad in cybersecurity voor?",
         answers: [
-            "Kosten verlagen",
-            "Snel en iteratief werkende software leveren",
-            "De noodzaak van testen elimineren",
-            "Alleen focussen op documentatie"
+            "Vertrouwelijkheid, Integriteit, Beschikbaarheid",
+            "Cryptografie, Intrusiedetectie, Authenticatie",
+            "Controle, Onderzoek, Verzekering"
+        ],
+        correct: 0,
+        image: "images/spirited-away-4.jpg"
+    },
+    {
+        section: "Sectie 2: Beveiliging",
+        question: "Bij welke aanval wordt de communicatie tussen twee partijen onderschept zonder dat zij het weten?",
+        answers: [
+            "Phishing",
+            "Man-in-the-Middle (MITM)",
+            "SQL-injectie",
+            "Cross-Site Scripting (XSS)"
+        ],
+        correct: 1,
+        image: "images/spirited-away-5.jpg"
+    },
+    {
+        section: "Sectie 2: Beveiliging",
+        question: "Wat is het doel van hashing in de beveiliging?",
+        answers: [
+            "Om gegevens te versleutelen voor veilige verzending",
+            "Om wachtwoorden veilig op te slaan",
+            "Om externe opdrachten uit te voeren",
+            "Om bestanden te comprimeren"
+        ],
+        correct: 1,
+        image: "images/spirited-away-6.jpg"
+    },
+    {
+        section: "Sectie 2: Beveiliging",
+        question: "Welke van de volgende is een voorbeeld van multi-factor authenticatie (MFA)?",
+        answers: [
+            "Alleen een wachtwoord invoeren",
+            "Een vingerafdruk en een wachtwoord gebruiken",
+            "Inloggen met alleen een e-mailadres"
         ],
         correct: 1,
         image: "images/spirited-away-1.jpg"
-    },
-    {
-        section: "Sectie 1: Software Engineering",
-        question: "Welke van de volgende is GEEN levenscyclusmodel voor softwareontwikkeling?",
-        answers: [
-            "Waterval",
-            "Spiraal",
-            "Blockchain",
-            "V-model"
-        ],
-        correct: 2,
-        image: "images/spirited-away-2.jpg"
-    },
-    {
-        section: "Sectie 1: Software Engineering",
-        question: "Waar staat SOLID voor in objectgeoriënteerd ontwerp?",
-        answers: [
-            "Eenvoudig, geoptimaliseerd, logisch, onafhankelijk, dynamisch",
-            "Enkele verantwoordelijkheid, open-gesloten, Liskov-substitutie, interface-segregatie, afhankelijkheidsomkering",
-            "Systematisch, geordend, gelaagd, geïntegreerd, gedistribueerd"
-        ],
-        correct: 1,
-        image: "images/spirited-away-3.jpg"
-    },
-    {
-        section: "Sectie 1: Software Engineering",
-        question: "Welk programmeerparadigma wordt het meest geassocieerd met Java en C++?",
-        answers: [
-            "Functioneel",
-            "Objectgeoriënteerd",
-            "Procedureel",
-            "Logicagebaseerd"
-        ],
-        correct: 1,
-        image: "images/spirited-away-4.jpg"
     }
 ];
 
@@ -185,7 +184,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     animateCircles();
 
-    // Load first question
     loadQuestion();
 
     document.getElementById('nextBtn').addEventListener('click', nextQuestion);
