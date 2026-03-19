@@ -1,4 +1,4 @@
-const BASE = 'http://localhost:5000/api/quiz'
+const BASE = `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/quiz`
 
 export const fetchSections = () =>
   fetch(`${BASE}/sections`).then(r => {
