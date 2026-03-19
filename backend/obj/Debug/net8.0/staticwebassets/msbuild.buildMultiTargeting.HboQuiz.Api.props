@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HboQuiz.Api.props" />
+</Project>

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "VRgHk4iO/oguRnVnqexBBJUX53hXkqaeLZ4KihsT9T8=",
+  "Source": "HboQuiz.Api",
+  "BasePath": "_content/HboQuiz.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
