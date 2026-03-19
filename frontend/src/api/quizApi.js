@@ -1,23 +1,31 @@
-const BASE = `${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/quiz`
+import { sections, getQuestions, calcResult } from '../data/quizData.js'
 
-export const fetchSections = () =>
-  fetch(`${BASE}/sections`).then(r => {
-    if (!r.ok) throw new Error('Could not load sections')
-    return r.json()
-  })
+const API = import.meta.env.VITE_API_URL
 
-export const fetchQuestions = (sectionId) =>
-  fetch(`${BASE}/sections/${sectionId}/questions`).then(r => {
-    if (!r.ok) throw new Error('Could not load questions')
-    return r.json()
-  })
+async function tryApi(path, options) {
+  if (!API) return null
+  try {
+    const res = await fetch(`${API}/api/quiz${path}`, { ...options, signal: AbortSignal.timeout(3000) })
+    if (!res.ok) return null
+    return await res.json()
+  } catch {
+    return null
+  }
+}
 
-export const submitAnswers = (sectionId, answers) =>
-  fetch(`${BASE}/submit`, {
+export async function fetchSections() {
+  return (await tryApi('/sections')) ?? sections
+}
+
+export async function fetchQuestions(sectionId) {
+  return (await tryApi(`/sections/${sectionId}/questions`)) ?? getQuestions(sectionId)
+}
+
+export async function submitAnswers(sectionId, answers) {
+  const fromApi = await tryApi('/submit', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ sectionId, answers }),
-  }).then(r => {
-    if (!r.ok) throw new Error('Could not submit answers')
-    return r.json()
   })
+  return fromApi ?? calcResult(sectionId, answers)
+}
